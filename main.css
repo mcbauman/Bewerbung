@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-size: 16px;
+}
+
+html{
+    background-color: rgb(73, 73, 73);
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background:linear-gradient(135deg, grey, lightgrey, grey,lightgrey,grey);
+    margin:0 auto;
+    width:800px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    "empty header"
+    "aside main";
+}
+header{
+    padding: 15px;
+    grid-area:header;
+    color:darkred;
+}
+aside{
+    padding: 0 15px;
+    grid-area: aside;
+    color:black;
+}
+main{
+    padding: 15px;
+    border-radius: 15px;
+    grid-area:main;
+    background-color: white;
+    box-shadow: 5px 5px 5px lightgray inset;
+}
+
+h1{
+    font-size: 3rem;
+    font-variant: small-caps;
+}
+h2{
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+h3{
+    font-size: 1.5rem;;
+    color:darkred;
+    margin-top: 15px;
+}
+h4{
+    margin-top: 10px;
+}
+h5{
+    font-style: italic;
+    font-weight: normal;
+}    
+ul{
+    padding-left: 20px;
+    list-style-type: circle;
+}
+img{
+    padding-top: 0;
+    width: 100%;
+    border-radius: 10px;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+}
